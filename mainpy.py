@@ -43,6 +43,7 @@ conversions_personnalisees = {}
 # Liste qui stocke les devises préférées de l'utilisateur
 devise_preferee = []
 
+#Le menu
 print("Convertisseur de monnaie")
 while True:
     print("\nOptions : ")
