@@ -1,3 +1,14 @@
+# -*- coding: utf-8 -*-
+"""
+Made in Marseille
+
+@author: Raphael
+"""
+#programme en-tete programme python
+#version python : 
+#auteur : ATTAS Raphaël
+#email : raphael.attias@laplateforme.io
+
 from forex_python.converter import CurrencyRates
 
 c = CurrencyRates()
