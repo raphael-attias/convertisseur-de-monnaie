@@ -28,22 +28,17 @@ def ajouter_devise_preferee(devise_preferee, conversions_personnalisees):
 
 c = CurrencyRates()
 
-# Dictionnaire des exemples de devises avec leurs noms
 exemples = {'USD': 'Dollar américain', 'EUR': 'Euro', 'JPY': 'Yen japonais', 'GBP': 'Livre sterling', 'AUD': 'Dollar australien', 'CAD': 'Dollar canadien', 'CHF': 'Franc suisse', 'CNY': 'Yuan chinois', 'SEK': 'Couronne suédoise', 'NZD': 'Dollar néo-zélandais'}
 
 print("Convertisseur de monnaie")
 
-# Afficher les exemples de devises
 for code, nom in exemples.items():
     print(f"{code}: {nom}")
 
-# Dictionnaire des taux de conversion personnalisées
 conversions_personnalisees = {}
 
-# Liste qui stocke les devises préférées de l'utilisateur
 devise_preferee = []
 
-#Le menu
 print("Convertisseur de monnaie")
 while True:
     print("\nOptions : ")
@@ -64,7 +59,6 @@ while True:
     elif choix == "4":
         devise = input("Entrez une paire de devises (ex : eur usd) : ").split()
         montant = float(input("Entrez le montant à convertir : "))
-        # Calcul du change
         try:
             if len(devise) != 2:
                 print("Erreur de format (devise1 devise2)")
